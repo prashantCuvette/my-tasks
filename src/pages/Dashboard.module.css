@@ -1,0 +1,12 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  padding: 2rem;
+}
+
+.welcome {
+  text-align: center;
+} 

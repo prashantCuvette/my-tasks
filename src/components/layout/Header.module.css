@@ -1,0 +1,108 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--surface-color);
+  box-shadow: var(--box-shadow);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navLinks a {
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: var(--on-surface-color);
+  transition: color 0.3s;
+}
+
+.navLinks a:hover,
+.navLinks a.active {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userEmail {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.logoutButton {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: var(--primary-variant-color);
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--surface-color);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.mobileNav a {
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  color: var(--on-surface-color);
+  transition: color 0.3s;
+}
+
+.mobileNav a:hover,
+.mobileNav a.active {
+  color: var(--primary-color);
+}
+
+.mobileUserInfo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #eee;
+}
+
+/* Mobile First */
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+  }
+
+  .navLinks, .userInfo {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+} 

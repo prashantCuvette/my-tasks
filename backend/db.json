@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "d2d6",
+      "username": "prashant",
+      "email": "prashant@gmail.com",
+      "password": "123"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1750500758366,
+      "title": "Go Ty GYM ! ! !",
+      "description": "## GYM JAO",
+      "priority": "high",
+      "completed": false,
+      "userId": "d2d6",
+      "createdAt": "2025-06-21T10:12:38.366Z"
+    },
+    {
+      "id": 1750500822433,
+      "title": "Promises in JavaScript",
+      "description": "- read about promises\n- difference between .then and async-await\n- event loop\n- mutation observer",
+      "priority": "high",
+      "completed": false,
+      "userId": "d2d6",
+      "createdAt": "2025-06-21T10:13:42.433Z"
+    },
+    {
+      "id": 1750500886722,
+      "title": "Node JS",
+      "description": "- character encoding in Node JS\n- UTF-8 vs UTF-16 vs UTF-32\n- Array Buffers\n- Data View and Typed Array",
+      "priority": "low",
+      "completed": false,
+      "userId": "d2d6",
+      "createdAt": "2025-06-21T10:14:46.722Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1750501095337,
+      "title": "What are Typed Array in Node JS?",
+      "content": "## Array Buffers in Node JS\n\n`Array Buffers` are an array of bytes. It means that it is like array i.e. contiguous memory location. **Each Index** can hold data of 1 byte. The maximum alloted size by Node JS is nearly equal to 2 Gib.",
+      "userId": "d2d6",
+      "createdAt": "2025-06-21T10:18:15.337Z"
+    }
+  ]
+}
